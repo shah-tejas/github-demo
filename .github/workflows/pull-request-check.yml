@@ -1,0 +1,18 @@
+name: Run tests for pull requests to master
+
+on:
+    pull_request:
+        branches: [ master ]
+
+jobs:
+    build:
+        name: Test job
+        runs-on: ubuntu-latest
+        steps:
+        - name: Print a greeting
+          env:
+            MY_VAR: Hello World! My name is
+            FIRST_NAME: Tejas
+            LAST_NAME: Shah
+          run: |
+            echo $MY_VAR $FIRST_NAME $LAST_NAME

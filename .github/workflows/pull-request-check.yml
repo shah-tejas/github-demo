@@ -15,4 +15,5 @@ jobs:
             FIRST_NAME: Tejas
             LAST_NAME: Shah
           run: |
-            echo $MY_VAR $FIRST_NAME $LAST_NAME
+            echo $MY_VAR $FIRST_NAME $LAST_NAME |
+            echo This is Build number $GITHUB_RUN_NUMBER
